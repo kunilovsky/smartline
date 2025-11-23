@@ -4,92 +4,43 @@ layout = "default"
 is_hidden = 0
 ==
 {% put head %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>SmartLine | Территория онлайн-бизнеса</title>
-
-<meta name="description" content="Готовый маркетплейс под вашим брендом. Регистрируйтесь, настраивайте витрину и начинайте продавать свои услуги онлайн" />
+<meta name="description"
+    content="Готовый маркетплейс под вашим брендом. Регистрируйтесь, настраивайте витрину и начинайте продавать свои услуги онлайн" />
 <meta property="og:title" content="SmartLine | Территория онлайн-бизнеса" />
-<meta property="og:description" content="Готовый маркетплейс под вашим брендом. Регистрируйтесь, настраивайте витрину и начинайте продавать свои услуги онлайн" />
+<meta property="og:description"
+    content="Готовый маркетплейс под вашим брендом. Регистрируйтесь, настраивайте витрину и начинайте продавать свои услуги онлайн" />
 
-<link rel="stylesheet" href="{{ 'assets/css/tilda-grid-3.0.min.css' | theme }}" type="text/css"/>
-<link rel="stylesheet" href="{{ 'assets/css/tilda-blocks-page87456116.min.css?t=1762253284' | theme }}" type="text/css" />
-<link rel="stylesheet" href="{{ 'assets/css/tilda-animation-2.0.min.css' | theme }}" type="text/css" />
-<link rel="stylesheet" href="{{ 'assets/css/tilda-menu-widgeticons-1.0.min.css' | theme }}" type="text/css" />
-<link rel="stylesheet" href="{{ 'assets/css/fonts-tildasans.css' | theme }}" type="text/css" />
-
-<script nomodule src="{{ 'assets/js/tilda-polyfill-1.0.min.js' | theme }}" charset="utf-8"></script>
-<script type="text/javascript">
-    function t_onReady(func) {if(document.readyState!='loading') {func();} else {document.addEventListener('DOMContentLoaded',func);}}
-    function t_onFuncLoad(funcName,okFunc,time) {if(typeof window[funcName]==='function') {okFunc();} else {setTimeout(function() {t_onFuncLoad(funcName,okFunc,time);},(time||100));}}function t396_initialScale(t){var e=document.getElementById("rec"+t);if(e){var i=e.querySelector(".t396__artboard");if(i){window.tn_scale_initial_window_width||(window.tn_scale_initial_window_width=document.documentElement.clientWidth);var a=window.tn_scale_initial_window_width,r=[],n,l=i.getAttribute("data-artboard-screens");if(l){l=l.split(",");for(var o=0;o<l.length;o++)r[o]=parseInt(l[o],10)}else r=[320,480,640,960,1200];for(var o=0;o<r.length;o++){var d=r[o];a>=d&&(n=d)}var _="edit"===window.allrecords.getAttribute("data-tilda-mode"),c="center"===t396_getFieldValue(i,"valign",n,r),s="grid"===t396_getFieldValue(i,"upscale",n,r),w=t396_getFieldValue(i,"height_vh",n,r),g=t396_getFieldValue(i,"height",n,r),u=!!window.opr&&!!window.opr.addons||!!window.opera||-1!==navigator.userAgent.indexOf(" OPR/");if(!_&&c&&!s&&!w&&g&&!u){var h=parseFloat((a/n).toFixed(3)),f=[i,i.querySelector(".t396__carrier"),i.querySelector(".t396__filter")],v=Math.floor(parseInt(g,10)*h)+"px",p;i.style.setProperty("--initial-scale-height",v);for(var o=0;o<f.length;o++)f[o].style.setProperty("height","var(--initial-scale-height)");t396_scaleInitial__getElementsToScale(i).forEach((function(t){t.style.zoom=h}))}}}}function t396_scaleInitial__getElementsToScale(t){return t?Array.prototype.slice.call(t.children).filter((function(t){return t&&(t.classList.contains("t396__elem")||t.classList.contains("t396__group"))})):[]}function t396_getFieldValue(t,e,i,a){var r,n=a[a.length-1];if(!(r=i===n?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+i)))for(var l=0;l<a.length;l++){var o=a[l];if(!(o<=i)&&(r=o===n?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+o)))break}return r}window.TN_SCALE_INITIAL_VER="1.0",window.tn_scale_initial_window_width=null;
-</script>
-
-<script src="{{ 'assets/js/tilda-scripts-3.0.min.js' | theme }}" charset="utf-8" defer></script>
-<script src="{{ 'assets/js/tilda-blocks-page87456116.min.js?t=1762253284' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/lazyload-1.3.min.export.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-animation-2.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-zero-1.1.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-menu-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-menu-widgeticons-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-animation-ext-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-animation-sbs-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-zero-scale-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-zero-fixed-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-skiplink-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script src="{{ 'assets/js/tilda-events-1.0.min.js' | theme }}" charset="utf-8" async></script>
-<script type="text/javascript">window.dataLayer=window.dataLayer||[];</script>
-<script type="text/javascript">
-    (function() {if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false&&typeof(sessionStorage)!='undefined'&&sessionStorage.getItem('visited')!=='y'&&document.visibilityState){var style=document.createElement('style');style.type='text/css';style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';document.getElementsByTagName('head')[0].appendChild(style);function t_setvisRecs(){var alr=document.querySelectorAll('.t-records');Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_animated");});setTimeout(function() {Array.prototype.forEach.call(alr,function(el) {el.classList.add("t-records_visible");});sessionStorage.setItem("visited","y");},400);}
-        document.addEventListener('DOMContentLoaded',t_setvisRecs);}})();
-</script>
 {% endput %}
 
-<div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="16512886" data-tilda-page-id="87456116" data-tilda-formskey="7cab835b11730c583e79bce616512886" data-tilda-cookie="no" data-tilda-lazy="yes" data-tilda-root-zone="com" data-tilda-project-country="RU">
-    {% partial 'header_full' %}
+{% partial 'header-new' %}
 
-
-
-
-
-    <style>
-        .__fff {
-            background-color: #FCFCFC;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 24px;
-            padding-top: 200px;
-            padding-bottom: 400px;
-            background-image: url("data:image/svg+xml,%3Csvg width='459' height='691' viewBox='0 0 459 691' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M458.717 505.231C458.717 555.121 458.443 605.051 458.914 654.942C459.032 669.006 443.95 684.051 430.126 684.876C410.489 686.055 395.054 670.42 395.093 649.324C395.172 588.866 395.172 528.448 395.211 467.99C395.211 439.312 395.289 410.635 395.172 381.958C395.132 372.765 395.289 363.416 393.836 354.38C392.383 345.267 389.438 336.31 386.492 327.51C380.954 310.893 370.979 296.987 358.725 284.73C347.846 273.809 335.357 265.284 321.139 258.999C301.463 250.317 280.962 246.742 259.675 248.785C240.627 250.592 222.836 256.524 206.458 266.738C190.866 276.48 177.906 288.776 167.891 304.058C158.583 318.279 152.299 333.678 148.961 350.531C146.526 362.787 146.683 374.965 146.683 387.222C146.604 454.987 146.722 522.751 146.565 590.477C146.526 601.319 149.589 610.512 157.64 617.858C173.232 632.157 201.038 627.561 209.797 606.112C212.31 599.984 212.467 593.895 212.507 587.688C212.585 508.649 212.546 429.648 212.546 350.609C212.546 339.02 215.688 328.767 225.271 321.303C240.352 309.557 260.343 313.25 271.025 328.217C275.346 334.267 276.759 341.024 276.72 348.409C276.602 408.985 276.681 469.561 276.642 530.176C276.642 553.157 276.799 576.138 276.445 599.119C276.17 616.169 270.279 631.607 261.167 645.867C251.349 661.188 238.113 672.855 221.775 680.634C201.824 690.14 180.93 692.694 159.133 687.862C133.997 682.284 114.439 668.573 99.9463 647.714C92.0915 636.4 86.1218 623.986 84.7472 610.001C83.726 599.552 82.7834 589.063 82.7834 578.574C82.5871 513.009 82.5085 447.444 82.8227 381.879C82.9013 367.737 83.6082 353.438 85.8861 339.492C87.732 328.139 91.5023 316.864 95.9011 306.179C100.928 293.883 106.741 281.744 113.653 270.431C121.901 256.878 132.387 244.857 144.209 234.093C159.958 219.833 177.513 208.48 196.954 199.759C226.685 186.481 257.79 183.692 289.838 185.734C302.209 186.52 314.345 188.563 325.813 192.531C339.206 197.166 352.166 203.216 364.852 209.619C378.559 216.533 390.459 226.315 401.495 236.882C412.845 247.803 422.703 260.02 431.068 273.456C438.805 285.869 445.011 298.951 449.645 312.739C452.551 321.382 453.808 330.574 456.125 339.413C460.367 355.834 458.639 372.608 458.717 389.225C458.914 427.959 458.757 466.575 458.717 505.231Z' fill='%23BFBDFF' fill-opacity='0.1' style='fill:%23BFBDFF;fill:color(display-p3 0.7490 0.7412 1.0000);fill-opacity:0.1;'/%3E%3Cpath d='M-99.8036 505.977C-99.8036 458.286 -100.079 410.596 -99.568 362.905C-99.4894 355.127 -97.997 344.52 -94.8158 331.007C-86.0969 293.765 -68.6983 268.781 -63.3178 261.395C-42.9344 233.425 -20.3909 218.537 -10.1796 212.212C3.21297 203.884 17.5481 197.441 32.5902 192.806C39.1883 190.802 46.2184 189.859 53.1307 189.427C64.9522 188.72 77.2451 200.034 81.2511 210.64C87.2601 226.59 77.2844 244.189 63.6169 250.199C57.8043 252.753 51.4811 254.128 45.4722 256.21C28.1522 262.22 13.3065 272.081 0.385216 285.123C-10.808 296.437 -19.9196 309.086 -26.0071 323.739C-28.9527 330.81 -30.4844 338.431 -32.8016 345.738C-36.8861 358.702 -35.6686 372.097 -35.7079 385.336C-35.8257 473.411 -35.7472 561.485 -35.7472 649.56C-35.7472 662.524 -40.1459 673.287 -51.5355 680.319C-65.5957 689.001 -85.3899 685.033 -94.5016 670.263C-98.3505 663.977 -100 657.338 -100 649.953C-99.8429 601.948 -99.9215 553.982 -99.9215 505.977C-99.8822 505.977 -99.8429 505.977 -99.8036 505.977Z' fill='%23BFBDFF' fill-opacity='0.1' style='fill:%23BFBDFF;fill:color(display-p3 0.7490 0.7412 1.0000);fill-opacity:0.1;'/%3E%3Cpath d='M285.281 159.257C241.49 159.257 205.672 123.43 205.672 79.6286C205.672 35.827 241.49 0 285.281 0C329.072 0 364.89 35.827 364.89 79.6286C364.89 123.43 329.072 159.257 285.281 159.257Z' fill='%23BFBDFF' fill-opacity='0.1' style='fill:%23BFBDFF;fill:color(display-p3 0.7490 0.7412 1.0000);fill-opacity:0.1;'/%3E%3Cpath d='M71.1189 159.257C27.328 159.257 -8.49023 123.43 -8.49023 79.6286C-8.49023 35.827 27.328 0 71.1189 0C114.91 0 150.728 35.827 150.728 79.6286C150.728 123.43 114.91 159.257 71.1189 159.257Z' fill='%23BFBDFF' fill-opacity='0.1' style='fill:%23BFBDFF;fill:color(display-p3 0.7490 0.7412 1.0000);fill-opacity:0.1;'/%3E%3C/svg%3E%0A");
-            background-size: 450px;
-            background-position: bottom left;
-            background-repeat: no-repeat;
-        }
-    </style>
-
-
-    <div class="__fff">
-        <a href="{{ 'education/catalog' | page }}" style="padding: 30px 34px; background-color: white; border-radius: 20px; border: 1px solid #202020; font-family: 'TildaSans', Arial, sans-serif">
-            <div style="text-align: center;  font-size: 24px">
-                <img src="https://smartline.kg/themes/smartline/assets/images/tild6565-3039-4031-a435-636237316530__logo.svg" style="height: 37px; max-width: 100%; display: block; margin-bottom: 12px; margin-left: auto; margin-right: auto;" alt="">
-                Курсы SmartLine
-            </div>
-        </a>
-        <a href="{{ 'education/openminder' | page }}" style="padding: 30px 34px; background-color: white; border-radius: 20px;  border: 1px solid #202020; font-family: 'TildaSans', Arial, sans-serif">
-            <div style="text-align: center; font-size: 24px">
-                <img src="https://openminder.ru/themes/view/assets/images/logo.svg" style="height: 37px; max-width: 100%; display: block; margin-bottom: 12px;  margin-left: auto; margin-right: auto" alt="">
-                Курсы OpenMinder
-            </div>
-        </a>
+<section class="education__start">
+    <div class="container education-container">
+        <div class="row education-row row-mob-600 ">
+            <a href="{{ 'education/catalog' | page }}" class="btn-ed">
+                <div class="education__link">
+                    <div class="education__logo">
+                        <img src="{{ 'assets/images/new/education_logo.svg' | theme }}" alt="SmartLine-icon">
+                    </div>
+                    <div class="education__name">
+                        Курсы SmartLine
+                    </div>
+                </div>
+            </a>
+            <a href="{{ 'education/openminder' | page }}" class="btn-ed">
+                <div class="education__link">
+                    <div class="education__logo">
+                        <img src="{{ 'assets/images/new/logo-om.svg' | theme }}" alt="SmartLine-icon">
+                    </div>
+                    <div class="education__name">
+                        Курсы SmartLine
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
+</section>
 
-
-
-
-
-
-
-    {% partial 'footer' %}
-</div>
-<script type="text/javascript">if(!window.mainTracker) {window.mainTracker='tilda';}
-window.tildastatcookie='no';setTimeout(function(){(function(d,w,k,o,g) {var n=d.getElementsByTagName(o)[0],s=d.createElement(o),f=function(){n.parentNode.insertBefore(s,n);};s.type="text/javascript";s.async=true;s.key=k;s.id="tildastatscript";s.src=g;if(w.opera=="[object Opera]") {d.addEventListener("DOMContentLoaded",f,false);} else {f();}})(document,window,'426ed85dab963af0f662181063f035d3','script','themes/smartline/assets/js/tilda-stat-1.0.min.js');},2000);
-</script>
+{% partial 'footer-new' %}

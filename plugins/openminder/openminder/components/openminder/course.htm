@@ -90,7 +90,7 @@
 
 <div class="container" style="margin-top: 24px">
     {% if this.page.id == 'clear-education-course' %}
-        <a href="{{ 'clear/education/catalog' | page }}" class="d-flex align-items-center" style="gap: 3px; color: black; margin-bottom: 24px;">
+        <a href="{{ 'education/catalog' | page }}" class="d-flex align-items-center" style="gap: 3px; color: black; margin-bottom: 24px;">
     {% else %}
         <a href="{{ 'education/catalog' | page }}" class="d-flex align-items-center" style="gap: 3px; color: black; margin-bottom: 24px;">
     {% endif %}
@@ -137,7 +137,7 @@
             {% for course in course.similar %}
                 <div class="col-lg-3 col-sm-6">
                     {% if this.page.id == 'clear-education-course' %}
-                        <a href="{{ 'clear/education/course' | page({course_id: course.id}) }}">
+                        <a href="{{ 'education/course' | page({course_id: course.id}) }}">
                     {% else %}
                         <a href="{{ 'education/course' | page({course_id: course.id}) }}">
                     {% endif %}

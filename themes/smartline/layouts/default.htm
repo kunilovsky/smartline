@@ -4,36 +4,50 @@ description = "Default layout"
 ==
 <!DOCTYPE html>
 <html lang="{{ this.site.code }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="SmartLine">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="generator" content="SmartLine">
 
-        <meta property="og:url" content="{{ '' | page }}" />
-        <meta property="og:url" content="{{ '' | page }}">
-        <meta property="og:locale" content="{{ this.site.code }}">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="{{ 'assets/images/tild6536-3665-4635-b461-663438323830__desktop_-_90.png' | theme }}" />
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="SmartLine">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="SmartLine">
 
-        <link rel="canonical" href="{{ '' | page }}">
+    <meta property="og:url" content="{{ '' | page }}" />
+    <meta property="og:url" content="{{ '' | page }}">
+    <meta property="og:locale" content="{{ this.site.code }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ 'assets/images/icon-og.png' | theme }}" />
 
-        <link rel="shortcut icon" href="{{ 'assets/images/tild3661-6632-4630-b662-363933323965__group_469319.png' | theme }}" type="image/x-icon" />
+    <link rel="canonical" href="{{ '' | page }}">
 
-        {% styles %}
+    <link href="{{ 'assets/css/fonts.css' | theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/style.css' | theme }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ 'assets/images/icon.png' | theme }}" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
+    <link rel="manifest" href="/resources/manifest.json">
 
-        {% placeholder head %}
+    {% styles %}
 
-        {% scripts %}
-    </head>
+    {% placeholder head %}
 
-    <body class="t-body" style="margin:0;">
-        {% page %}
+</head>
 
-        {% framework %}
-        {% framework extras %}
+<body>
+    {% put head %}
+    {% endput %}
 
-        {% placeholder footer %}
-    </body>
+    {% page %}
+
+    {% framework %}
+    {% framework extras %}
+
+    {% placeholder footer %}
+
+    {% scripts %}
+
+    <script src="{{ 'assets/js/main.js' | theme }}"></script>
+</body>
+
 </html>
